@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "pbzsRITPot6VxBM6lfpvsDVKP2CJmDbrEp1d3yFgfRE=",
+  "Source": "JwtAuthAspNetWebAPI",
+  "BasePath": "_content/JwtAuthAspNetWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
