@@ -158,3 +158,4 @@ D:\Mazen\Projects\JwtAuthAspNetWebAPI\JwtAuthAspNetWebAPI\obj\Debug\net9.0\refin
 D:\Mazen\Projects\JwtAuthAspNetWebAPI\JwtAuthAspNetWebAPI\obj\Debug\net9.0\JwtAuthAspNetWebAPI.pdb
 D:\Mazen\Projects\JwtAuthAspNetWebAPI\JwtAuthAspNetWebAPI\obj\Debug\net9.0\JwtAuthAspNetWebAPI.genruntimeconfig.cache
 D:\Mazen\Projects\JwtAuthAspNetWebAPI\JwtAuthAspNetWebAPI\obj\Debug\net9.0\ref\JwtAuthAspNetWebAPI.dll
+D:\Mazen\Projects\JwtAuthAspNetWebAPI\JwtAuthAspNetWebAPI\obj\Debug\net9.0\JwtAuthAspNetWebAPI.sourcelink.json

@@ -46,6 +46,7 @@ namespace JwtAuthAspNetWebAPI.Controllers
             return Ok("Role Seeding Done Successfully");
         }
 
+
         [HttpPost]
         [Route("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
@@ -83,6 +84,7 @@ namespace JwtAuthAspNetWebAPI.Controllers
             return Ok("User Created Successfully");
         }
 
+
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
@@ -114,8 +116,11 @@ namespace JwtAuthAspNetWebAPI.Controllers
             {
                 authClaims.Add(new Claim(ClaimTypes.Role, userRole));
             }
-        }
 
+            string token = GenerateNewJsonWebToken(authClaims);
+
+            return Ok(token);
+        }
         private string GenerateNewJsonWebToken(List<Claim> claims)
         {
             var authSecret = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
@@ -125,11 +130,45 @@ namespace JwtAuthAspNetWebAPI.Controllers
                     audience: _configuration["Jwt:Audience"],
                     expires: DateTime.Now.AddHours(1),
                     claims: claims,
-                    signingCredentials: new SigningCredentials(authSecret, SecurityAlgorithms.HmacSha256);
+                    signingCredentials: new SigningCredentials(authSecret, SecurityAlgorithms.HmacSha256));
 
             string token = new JwtSecurityTokenHandler().WriteToken(tokenObject);
 
             return token;
+        }
+
+
+        [HttpPost]
+        [Route("make-admin")]
+        public async Task<IActionResult> MakeAdmin([FromBody] UpdatePermissionDto updatePermissionDto)
+        {
+            var user = await _userManager.FindByNameAsync(updatePermissionDto.UserName);
+
+            if (user is null)
+            {
+                return BadRequest("Invalid User Name!");
+            }
+
+            await _userManager.AddToRoleAsync(user, StaticUserRoles.ADMIN);
+
+            return Ok("User is now an Admin");
+        }
+
+
+        [HttpPost]
+        [Route("make-owner")]
+        public async Task<IActionResult> MakeOwner([FromBody] UpdatePermissionDto updatePermissionDto)
+        {
+            var user = await _userManager.FindByNameAsync(updatePermissionDto.UserName);
+
+            if (user is null)
+            {
+                return BadRequest("Invalid User Name!");
+            }
+
+            await _userManager.AddToRoleAsync(user, StaticUserRoles.OWNER);
+
+            return Ok("User is now an Owner");
         }
     }
 }
