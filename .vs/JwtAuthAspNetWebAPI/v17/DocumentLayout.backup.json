@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Mazen\\Projects\\JwtAuthAspNetWebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{10E27DFC-0571-48B5-9C35-F5FF810B73C5}|JwtAuthAspNetWebAPI\\JwtAuthAspNetWebAPI.csproj|d:\\mazen\\projects\\jwtauthaspnetwebapi\\jwtauthaspnetwebapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10E27DFC-0571-48B5-9C35-F5FF810B73C5}|JwtAuthAspNetWebAPI\\JwtAuthAspNetWebAPI.csproj|solutionrelative:jwtauthaspnetwebapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10E27DFC-0571-48B5-9C35-F5FF810B73C5}|JwtAuthAspNetWebAPI\\JwtAuthAspNetWebAPI.csproj|d:\\mazen\\projects\\jwtauthaspnetwebapi\\jwtauthaspnetwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10E27DFC-0571-48B5-9C35-F5FF810B73C5}|JwtAuthAspNetWebAPI\\JwtAuthAspNetWebAPI.csproj|solutionrelative:jwtauthaspnetwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 160,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Mazen\\Projects\\JwtAuthAspNetWebAPI\\JwtAuthAspNetWebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "JwtAuthAspNetWebAPI\\Program.cs",
+              "ToolTip": "D:\\Mazen\\Projects\\JwtAuthAspNetWebAPI\\JwtAuthAspNetWebAPI\\Program.cs",
+              "RelativeToolTip": "JwtAuthAspNetWebAPI\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwDAAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T22:21:42.449Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Mazen\\Projects\\JwtAuthAspNetWebAPI\\JwtAuthAspNetWebAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "JwtAuthAspNetWebAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Mazen\\Projects\\JwtAuthAspNetWebAPI\\JwtAuthAspNetWebAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "JwtAuthAspNetWebAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAIwGQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T22:49:53.862Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
